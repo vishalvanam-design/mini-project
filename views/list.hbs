@@ -1,0 +1,186 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<center>
+<div class="container">   
+    <div class="jumbotron">
+        {{#each data}}
+        <b>Roll No: {{this.rollNo}}</b>
+        <br>
+        <b>Name: {{this.Name}}</b>
+        <br>
+        {{/each}}
+<table class="table">
+    <thead class="thead-dark">   
+    <tr>
+        <th scope="col">Subjects</th>
+        <th scope="col">Course Outcomes</th>
+    </tr>
+    </thead>
+    {{#each data}}
+    <tr>
+        {{#if this.SubjectNames.Sub1}}
+        <th>{{this.SubjectNames.Sub1}}</th>
+        <td>
+        {{#if (gt Subjects.Sub1 26)}}
+        <b>CO.1: </b>{{this.Sub1OC.oc1}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub1 40)}}
+        <b>CO.2: </b>{{this.Sub1OC.oc2}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub1 55)}}
+        <b>CO.3: </b>{{this.Sub1OC.oc3}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub1 70)}}
+        <b>CO.4: </b>{{this.Sub1OC.oc4}}
+        <br>
+        {{/if}}
+        {{#if (gt Subjects.Sub1 85)}}
+        <b>CO.5: </b>{{this.Sub1OC.oc5}}
+        <br>
+        {{/if}}
+        </td>
+        {{/if}}
+    </tr>
+    <tr>
+        {{#if this.SubjectNames.Sub2}}
+        <th>{{this.SubjectNames.Sub2}}</th>
+        <td>
+        {{#if (gt Subjects.Sub2 26)}}
+        <b>CO.1: </b>{{this.Sub2OC.oc1}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub2 40)}}
+        <b>CO.2: </b>{{this.Sub2OC.oc2}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub2 55)}}
+        <b>CO.3: </b>{{this.Sub2OC.oc3}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub2 70)}}
+        <b>CO.4: </b>{{this.Sub2OC.oc4}}
+        <br>
+        {{/if}}
+        {{#if (gt Subjects.Sub2 85)}}
+        <b>CO.5: </b>{{this.Sub2OC.oc5}}
+        <br>
+        {{/if}}
+        </td>
+        {{/if}}
+    </tr>
+    <tr>
+        {{#if this.SubjectNames.Sub3}}
+        <th>{{this.SubjectNames.Sub3}}</th>
+        <td>
+        {{#if (gt Subjects.Sub3 26)}}
+        <b>CO.1: </b>{{this.Sub3OC.oc1}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub3 40)}}
+        <b>CO.2: </b>{{this.Sub3OC.oc2}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub3 55)}}
+        <b>CO.3: </b>{{this.Sub3OC.oc3}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub3 70)}}
+        <b>CO.4: </b>{{this.Sub3OC.oc4}}
+        <br>
+        {{/if}}
+        {{#if (gt Subjects.Sub3 85)}}
+        <b>CO.5: </b>{{this.Sub3OC.oc5}}
+        <br>
+        {{/if}}
+        </td>
+        {{/if}}
+    </tr>
+    <tr>
+        {{#if this.SubjectNames.Sub4}}
+        <th>{{this.SubjectNames.Sub4}}</th>
+        <td>
+        {{#if (gt Subjects.Sub4 26)}}
+        <b>CO.1: </b>{{this.Sub4OC.oc1}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub4 40)}}
+        <b>CO.2: </b>{{this.Sub4OC.oc2}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub4 55)}}
+        <b>CO.3: </b>{{this.Sub4OC.oc3}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub4 70)}}
+        <b>CO.4: </b>{{this.Sub4OC.oc4}}
+        <br>
+        {{/if}}
+        {{#if (gt Subjects.Sub4 85)}}
+        <b>CO.5: </b>{{this.Sub4OC.oc5}}
+        <br>
+        {{/if}}
+        </td>
+        {{/if}}
+    </tr>
+    <tr>
+        {{#if this.SubjectNames.Sub5}}
+        <th>{{this.SubjectNames.Sub5}}</th>
+        <td>
+        {{#if (gt Subjects.Sub5 26)}}
+        <b>CO.1: </b>{{this.Sub5OC.oc1}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub5 40)}}
+        <b>CO.2: </b>{{this.Sub5OC.oc2}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub5 55)}}
+        <b>CO.3: </b>{{this.Sub5OC.oc3}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub5 70)}}
+        <b>CO.4: </b>{{this.Sub5OC.oc4}}
+        <br>
+        {{/if}}
+        {{#if (gt Subjects.Sub5 85)}}
+        <b>CO.5: </b>{{this.Sub5OC.oc5}}
+        <br>
+        {{/if}}
+        </td>
+        {{/if}}
+    </tr>
+     <tr>
+        {{#if this.SubjectNames.Sub6}}
+        <th>{{this.SubjectNames.Sub6}}</th>
+        <td>
+        {{#if (gt Subjects.Sub6 26)}}
+        <b>CO.1: </b>{{this.Sub6OC.oc1}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub6 40)}}
+        <b>CO.2: </b>{{this.Sub6OC.oc2}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub6 55)}}
+        <b>CO.3: </b>{{this.Sub6OC.oc3}}
+        <br>
+        {{/if}}
+        {{#if (gte Subjects.Sub6 70)}}
+        <b>CO.4: </b>{{this.Sub6OC.oc4}}
+        <br>
+        {{/if}}
+        {{#if (gt Subjects.Sub6 85)}}
+        <b>CO.5: </b>{{this.Sub6OC.oc5}}
+        <br>
+        {{/if}}
+        </td>
+        {{/if}}
+    </tr>
+    {{/each}}
+</table>
+
+</div>
+</div>
+</center>
